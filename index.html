@@ -47,6 +47,24 @@
         html { scroll-behavior: smooth; }
         .gradient-teal { background: linear-gradient(135deg, #0D9488 0%, #0F766E 100%); }
         .text-balance { text-wrap: balance; }
+
+        /* Scrolling logo marquee */
+        .logo-marquee {
+            overflow: hidden;
+            mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+            -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+        }
+        .logo-track {
+            display: flex;
+            animation: scroll 30s linear infinite;
+        }
+        .logo-track:hover {
+            animation-play-state: paused;
+        }
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
     </style>
 </head>
 <body class="font-sans text-brand-gray-800 antialiased">
@@ -153,7 +171,7 @@
 
                     <!-- CTA -->
                     <a href="#bundles" class="block w-full gradient-teal text-white text-center py-4 px-8 rounded-lg font-semibold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
-                        ADD TO CART — $149
+                        ADD TO CART
                     </a>
 
                     <!-- Trust Elements -->
@@ -217,6 +235,36 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AS SEEN IN - Scrolling Logos -->
+    <section class="bg-white border-y border-brand-gray-100 py-8">
+        <div class="logo-marquee">
+            <div class="logo-track">
+                <!-- First set of logos -->
+                <div class="flex items-center gap-16 px-8">
+                    <span class="text-2xl font-serif text-brand-gray-400 whitespace-nowrap tracking-tight">Forbes</span>
+                    <span class="text-xl font-bold text-brand-gray-400 whitespace-nowrap tracking-wider">10X HEALTH</span>
+                    <span class="text-xl font-bold text-brand-gray-400 whitespace-nowrap border border-brand-gray-300 px-3 py-1">DOAC</span>
+                    <span class="text-xl font-semibold text-brand-gray-400 whitespace-nowrap">NBC</span>
+                    <span class="text-xl text-brand-gray-400 whitespace-nowrap border border-brand-gray-400 rounded-full px-3 py-0.5">abc</span>
+                    <span class="text-lg font-bold text-brand-gray-400 whitespace-nowrap italic">FOX NEWS</span>
+                    <span class="text-xl text-brand-gray-400 whitespace-nowrap">Women's<span class="font-bold">Health</span></span>
+                    <span class="text-xl font-semibold text-brand-gray-400 whitespace-nowrap">mindbodygreen</span>
+                </div>
+                <!-- Duplicate set for seamless loop -->
+                <div class="flex items-center gap-16 px-8">
+                    <span class="text-2xl font-serif text-brand-gray-400 whitespace-nowrap tracking-tight">Forbes</span>
+                    <span class="text-xl font-bold text-brand-gray-400 whitespace-nowrap tracking-wider">10X HEALTH</span>
+                    <span class="text-xl font-bold text-brand-gray-400 whitespace-nowrap border border-brand-gray-300 px-3 py-1">DOAC</span>
+                    <span class="text-xl font-semibold text-brand-gray-400 whitespace-nowrap">NBC</span>
+                    <span class="text-xl text-brand-gray-400 whitespace-nowrap border border-brand-gray-400 rounded-full px-3 py-0.5">abc</span>
+                    <span class="text-lg font-bold text-brand-gray-400 whitespace-nowrap italic">FOX NEWS</span>
+                    <span class="text-xl text-brand-gray-400 whitespace-nowrap">Women's<span class="font-bold">Health</span></span>
+                    <span class="text-xl font-semibold text-brand-gray-400 whitespace-nowrap">mindbodygreen</span>
                 </div>
             </div>
         </div>
