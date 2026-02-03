@@ -325,6 +325,192 @@
         </div>
     </section>
 
+    <!-- DOCTOR TESTIMONIALS CAROUSEL -->
+    <section class="bg-brand-gray-50 py-20 lg:py-24 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="font-serif text-3xl sm:text-4xl text-center text-brand-gray-900 mb-4">
+                What Doctors Are Saying About Harmoni Pendant
+            </h2>
+            <p class="text-center text-brand-gray-500 mb-12 max-w-2xl mx-auto">Healthcare professionals share their experiences</p>
+
+            <!-- Carousel Container -->
+            <div class="relative">
+                <!-- Navigation Arrows -->
+                <button onclick="scrollTestimonials(-1)" class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center text-brand-gray-600 hover:text-brand-teal hover:shadow-xl transition-all hidden md:flex">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                    </svg>
+                </button>
+                <button onclick="scrollTestimonials(1)" class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center text-brand-gray-600 hover:text-brand-teal hover:shadow-xl transition-all hidden md:flex">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                    </svg>
+                </button>
+
+                <!-- Testimonials Track -->
+                <div id="testimonials-track" class="flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-4" style="scroll-behavior: smooth; -ms-overflow-style: none; scrollbar-width: none;">
+
+                    <!-- Dr. Fab Mancini -->
+                    <div class="flex-shrink-0 w-80 sm:w-96 snap-center">
+                        <div class="bg-white rounded-2xl p-8 shadow-sm h-full">
+                            <div class="flex items-center gap-4 mb-6">
+                                <div class="w-16 h-16 rounded-full bg-gradient-to-br from-brand-teal to-brand-teal-dark flex items-center justify-center text-white text-xl font-semibold">
+                                    FM
+                                </div>
+                                <div>
+                                    <div class="flex text-amber-400 mb-1">
+                                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                    </div>
+                                    <p class="font-semibold text-brand-gray-900">Dr. Fab Mancini</p>
+                                    <p class="text-sm text-brand-gray-500">Chiropractor & Bestselling Author</p>
+                                </div>
+                            </div>
+                            <p class="text-brand-gray-600 leading-relaxed italic">"My Harmoni pendant allows me to lower my stress while protecting me from harmful electromagnetic frequencies. I wear it everyday and feel AMAZING!"</p>
+                        </div>
+                    </div>
+
+                    <!-- Dr. Lisa Fortin -->
+                    <div class="flex-shrink-0 w-80 sm:w-96 snap-center">
+                        <div class="bg-white rounded-2xl p-8 shadow-sm h-full">
+                            <div class="flex items-center gap-4 mb-6">
+                                <div class="w-16 h-16 rounded-full bg-gradient-to-br from-brand-teal to-brand-teal-dark flex items-center justify-center text-white text-xl font-semibold">
+                                    LF
+                                </div>
+                                <div>
+                                    <div class="flex text-amber-400 mb-1">
+                                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                    </div>
+                                    <p class="font-semibold text-brand-gray-900">Dr. Lisa Fortin, MD</p>
+                                    <p class="text-sm text-brand-gray-500">Integrative Medicine Physician</p>
+                                </div>
+                            </div>
+                            <p class="text-brand-gray-600 leading-relaxed italic">"I did my own scan and showed that it does truly affect my heart rate variability. I was amazed to see the measurable difference in my own results."</p>
+                        </div>
+                    </div>
+
+                    <!-- Dr. Lisa Koche -->
+                    <div class="flex-shrink-0 w-80 sm:w-96 snap-center">
+                        <div class="bg-white rounded-2xl p-8 shadow-sm h-full">
+                            <div class="flex items-center gap-4 mb-6">
+                                <div class="w-16 h-16 rounded-full bg-gradient-to-br from-brand-teal to-brand-teal-dark flex items-center justify-center text-white text-xl font-semibold">
+                                    LK
+                                </div>
+                                <div>
+                                    <div class="flex text-amber-400 mb-1">
+                                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                    </div>
+                                    <p class="font-semibold text-brand-gray-900">Dr. Lisa Koche, MD</p>
+                                    <p class="text-sm text-brand-gray-500">Functional Medicine Specialist</p>
+                                </div>
+                            </div>
+                            <p class="text-brand-gray-600 leading-relaxed italic">"We had one really impressive benefit that happened to several of our participants, which was improved sleep. People were sleeping better almost immediately."</p>
+                        </div>
+                    </div>
+
+                    <!-- Dr. David Jockers -->
+                    <div class="flex-shrink-0 w-80 sm:w-96 snap-center">
+                        <div class="bg-white rounded-2xl p-8 shadow-sm h-full">
+                            <div class="flex items-center gap-4 mb-6">
+                                <div class="w-16 h-16 rounded-full bg-gradient-to-br from-brand-teal to-brand-teal-dark flex items-center justify-center text-white text-xl font-semibold">
+                                    DJ
+                                </div>
+                                <div>
+                                    <div class="flex text-amber-400 mb-1">
+                                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                    </div>
+                                    <p class="font-semibold text-brand-gray-900">Dr. David Jockers, DNM, DC, MS</p>
+                                    <p class="text-sm text-brand-gray-500">Functional Nutrition Expert</p>
+                                </div>
+                            </div>
+                            <p class="text-brand-gray-600 leading-relaxed italic">"EMF radiation is a silent form of stress on our body. The Harmoni pendant helps neutralize that stress so your body can function optimally."</p>
+                        </div>
+                    </div>
+
+                    <!-- Dr. Ryan Wohlfert -->
+                    <div class="flex-shrink-0 w-80 sm:w-96 snap-center">
+                        <div class="bg-white rounded-2xl p-8 shadow-sm h-full">
+                            <div class="flex items-center gap-4 mb-6">
+                                <div class="w-16 h-16 rounded-full bg-gradient-to-br from-brand-teal to-brand-teal-dark flex items-center justify-center text-white text-xl font-semibold">
+                                    RW
+                                </div>
+                                <div>
+                                    <div class="flex text-amber-400 mb-1">
+                                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                    </div>
+                                    <p class="font-semibold text-brand-gray-900">Dr. Ryan Wohlfert, DC</p>
+                                    <p class="text-sm text-brand-gray-500">Certified Mindset & High-Performance Coach</p>
+                                </div>
+                            </div>
+                            <p class="text-brand-gray-600 leading-relaxed italic">"The first week of using the pendant one of the first things I noticed was my sleep was so much better. I was waking up more refreshed and energized."</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Dot Indicators -->
+                <div class="flex justify-center gap-2 mt-6">
+                    <button onclick="scrollToTestimonial(0)" class="w-2 h-2 rounded-full bg-brand-teal transition-all testimonial-dot active"></button>
+                    <button onclick="scrollToTestimonial(1)" class="w-2 h-2 rounded-full bg-brand-gray-300 hover:bg-brand-gray-400 transition-all testimonial-dot"></button>
+                    <button onclick="scrollToTestimonial(2)" class="w-2 h-2 rounded-full bg-brand-gray-300 hover:bg-brand-gray-400 transition-all testimonial-dot"></button>
+                    <button onclick="scrollToTestimonial(3)" class="w-2 h-2 rounded-full bg-brand-gray-300 hover:bg-brand-gray-400 transition-all testimonial-dot"></button>
+                    <button onclick="scrollToTestimonial(4)" class="w-2 h-2 rounded-full bg-brand-gray-300 hover:bg-brand-gray-400 transition-all testimonial-dot"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Testimonial Carousel Functions
+        function scrollTestimonials(direction) {
+            const track = document.getElementById('testimonials-track');
+            const cardWidth = track.querySelector('div').offsetWidth + 24; // card width + gap
+            track.scrollBy({ left: direction * cardWidth, behavior: 'smooth' });
+        }
+
+        function scrollToTestimonial(index) {
+            const track = document.getElementById('testimonials-track');
+            const cardWidth = track.querySelector('div').offsetWidth + 24;
+            track.scrollTo({ left: index * cardWidth, behavior: 'smooth' });
+        }
+
+        // Update dot indicators on scroll
+        document.getElementById('testimonials-track').addEventListener('scroll', function() {
+            const track = this;
+            const cardWidth = track.querySelector('div').offsetWidth + 24;
+            const index = Math.round(track.scrollLeft / cardWidth);
+            const dots = document.querySelectorAll('.testimonial-dot');
+            dots.forEach((dot, i) => {
+                if (i === index) {
+                    dot.classList.remove('bg-brand-gray-300');
+                    dot.classList.add('bg-brand-teal');
+                } else {
+                    dot.classList.remove('bg-brand-teal');
+                    dot.classList.add('bg-brand-gray-300');
+                }
+            });
+        });
+    </script>
+
     <!-- SECTION 3: THE PROBLEM -->
     <section class="bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
