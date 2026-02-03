@@ -9,7 +9,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -37,6 +37,7 @@
                     fontFamily: {
                         'serif': ['Playfair Display', 'Georgia', 'serif'],
                         'sans': ['Inter', 'system-ui', 'sans-serif'],
+                        'display': ['Space Grotesk', 'system-ui', 'sans-serif'],
                     }
                 }
             }
@@ -80,7 +81,7 @@
                 </div>
 
                 <!-- Product Info -->
-                <div class="space-y-6">
+                <div class="space-y-4">
                     <!-- Reviews -->
                     <div class="flex items-center gap-2">
                         <div class="flex text-yellow-400">
@@ -94,7 +95,7 @@
                     </div>
 
                     <!-- Title -->
-                    <h1 class="font-serif text-3xl sm:text-4xl font-medium text-brand-gray-900">
+                    <h1 class="font-display text-3xl sm:text-4xl font-semibold text-brand-gray-900">
                         The Harmoni Pendant
                     </h1>
 
@@ -113,11 +114,7 @@
                     </p>
 
                     <p class="text-brand-gray-600 leading-relaxed">
-                        Unlike products that ask you to take them on faith, the Harmoni Pendant supports Bio Coherence Activation — a clinically validated approach that shows up directly on your HRV tracker.
-                    </p>
-
-                    <p class="text-brand-gray-600 leading-relaxed">
-                        In clinical studies with 101 subjects, researchers documented a <strong class="text-brand-gray-900">703% improvement in HRV Index</strong> using FDA-listed equipment. That's not a feeling. That's measured biological change.
+                        Unlike products that ask you to take them on faith, the Harmoni Pendant supports Bio Coherence Activation — a clinically validated approach that shows up directly on your HRV tracker. In clinical studies with 101 subjects, researchers documented a <strong class="text-brand-gray-900">703% improvement in HRV Index</strong> using FDA-listed equipment. That's not a feeling. That's measured biological change.
                     </p>
 
                     <p class="text-sm text-brand-gray-500">
@@ -125,22 +122,22 @@
                     </p>
 
                     <!-- Benefits -->
-                    <div class="space-y-2 py-4 border-y border-brand-gray-100">
-                        <div class="flex items-start gap-2">
-                            <svg class="w-5 h-5 text-brand-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            <span class="text-brand-gray-700"><strong>Supports Better Sleep</strong> — Users report sleeping through the night for the first time in years</span>
+                    <div class="grid grid-cols-2 gap-x-6 gap-y-2 py-3">
+                        <div class="flex items-center gap-2">
+                            <svg class="w-4 h-4 text-brand-teal flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="text-brand-gray-700 font-medium text-sm">Supports Better Sleep</span>
                         </div>
-                        <div class="flex items-start gap-2">
-                            <svg class="w-5 h-5 text-brand-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            <span class="text-brand-gray-700"><strong>Improves HRV</strong> — 703% improvement documented in clinical research</span>
+                        <div class="flex items-center gap-2">
+                            <svg class="w-4 h-4 text-brand-teal flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="text-brand-gray-700 font-medium text-sm">Improves HRV</span>
                         </div>
-                        <div class="flex items-start gap-2">
-                            <svg class="w-5 h-5 text-brand-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            <span class="text-brand-gray-700"><strong>Reduces Stress Response</strong> — 48% reduction in Stress Index measured</span>
+                        <div class="flex items-center gap-2">
+                            <svg class="w-4 h-4 text-brand-teal flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="text-brand-gray-700 font-medium text-sm">Reduces Stress Response</span>
                         </div>
-                        <div class="flex items-start gap-2">
-                            <svg class="w-5 h-5 text-brand-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            <span class="text-brand-gray-700"><strong>Promotes Mental Clarity</strong> — Clear the fog when your nervous system unsticks</span>
+                        <div class="flex items-center gap-2">
+                            <svg class="w-4 h-4 text-brand-teal flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="text-brand-gray-700 font-medium text-sm">Promotes Mental Clarity</span>
                         </div>
                     </div>
 
