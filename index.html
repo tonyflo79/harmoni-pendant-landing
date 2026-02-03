@@ -327,12 +327,118 @@
 
     <!-- SECTION 3: THE PROBLEM -->
     <section class="bg-white">
-        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
-            <h2 class="font-serif text-3xl sm:text-4xl text-center text-brand-gray-900 mb-12">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+            <h2 class="font-display text-3xl sm:text-4xl text-center text-brand-gray-900 mb-12 font-bold">
                 Why Nothing Has Worked (Until Now)
             </h2>
 
             <div class="prose prose-lg max-w-none text-brand-gray-600 space-y-6">
+                <!-- EMF Exposure Illustration - Float Right -->
+                <div class="float-right ml-8 mb-6 w-full sm:w-80 lg:w-96">
+                    <div class="bg-gradient-to-br from-brand-gray-900 to-brand-gray-800 rounded-2xl p-6 shadow-xl">
+                        <!-- SVG Illustration -->
+                        <svg viewBox="0 0 300 220" class="w-full h-auto" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Background glow effects -->
+                            <defs>
+                                <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
+                                    <stop offset="0%" stop-color="#0D9488" stop-opacity="0.4"/>
+                                    <stop offset="100%" stop-color="#0D9488" stop-opacity="0"/>
+                                </radialGradient>
+                                <radialGradient id="glowRed" cx="50%" cy="50%" r="50%">
+                                    <stop offset="0%" stop-color="#EF4444" stop-opacity="0.3"/>
+                                    <stop offset="100%" stop-color="#EF4444" stop-opacity="0"/>
+                                </radialGradient>
+                            </defs>
+
+                            <!-- Cell Tower (left) -->
+                            <g transform="translate(30, 60)">
+                                <circle cx="0" cy="0" r="35" fill="url(#glowRed)"/>
+                                <path d="M0 50 L-8 0 L-4 0 L-4 -20 L-2 -20 L0 -30 L2 -20 L4 -20 L4 0 L8 0 Z" fill="#737373" stroke="#525252" stroke-width="1"/>
+                                <line x1="-12" y1="10" x2="12" y2="10" stroke="#525252" stroke-width="2"/>
+                                <line x1="-8" y1="25" x2="8" y2="25" stroke="#525252" stroke-width="2"/>
+                                <!-- Signal waves -->
+                                <path d="M12 -15 Q20 -15 20 -5" stroke="#EF4444" stroke-width="1.5" fill="none" opacity="0.7"/>
+                                <path d="M15 -18 Q28 -18 28 -3" stroke="#EF4444" stroke-width="1.5" fill="none" opacity="0.5"/>
+                                <path d="M-12 -15 Q-20 -15 -20 -5" stroke="#EF4444" stroke-width="1.5" fill="none" opacity="0.7"/>
+                                <path d="M-15 -18 Q-28 -18 -28 -3" stroke="#EF4444" stroke-width="1.5" fill="none" opacity="0.5"/>
+                            </g>
+
+                            <!-- Satellite (top) -->
+                            <g transform="translate(150, 25)">
+                                <circle cx="0" cy="0" r="25" fill="url(#glowRed)"/>
+                                <rect x="-20" y="-3" width="40" height="6" fill="#737373" rx="1"/>
+                                <rect x="-6" y="-6" width="12" height="12" fill="#525252" rx="2"/>
+                                <circle cx="0" cy="0" r="3" fill="#A3A3A3"/>
+                                <!-- Signal waves down -->
+                                <path d="M-8 12 Q0 20 8 12" stroke="#EF4444" stroke-width="1.5" fill="none" opacity="0.7"/>
+                                <path d="M-12 18 Q0 30 12 18" stroke="#EF4444" stroke-width="1.5" fill="none" opacity="0.5"/>
+                            </g>
+
+                            <!-- WiFi Router / Smart Home (right) -->
+                            <g transform="translate(260, 80)">
+                                <circle cx="0" cy="0" r="30" fill="url(#glowRed)"/>
+                                <!-- House shape -->
+                                <path d="M-20 10 L0 -10 L20 10 L20 25 L-20 25 Z" fill="#525252" stroke="#404040" stroke-width="1"/>
+                                <rect x="-6" y="12" width="12" height="13" fill="#737373"/>
+                                <!-- WiFi signal -->
+                                <path d="M0 -15 Q-8 -22 0 -29" stroke="#EF4444" stroke-width="1.5" fill="none" opacity="0.5"/>
+                                <path d="M0 -15 Q8 -22 0 -29" stroke="#EF4444" stroke-width="1.5" fill="none" opacity="0.5"/>
+                                <path d="M0 -15 Q-12 -25 0 -35" stroke="#EF4444" stroke-width="1.5" fill="none" opacity="0.3"/>
+                                <path d="M0 -15 Q12 -25 0 -35" stroke="#EF4444" stroke-width="1.5" fill="none" opacity="0.3"/>
+                            </g>
+
+                            <!-- Person (center) -->
+                            <g transform="translate(150, 130)">
+                                <!-- Head -->
+                                <circle cx="0" cy="-25" r="15" fill="#A3A3A3" stroke="#737373" stroke-width="1"/>
+                                <!-- Body -->
+                                <path d="M0 -10 L0 30" stroke="#A3A3A3" stroke-width="8" stroke-linecap="round"/>
+                                <!-- Arms -->
+                                <path d="M-25 10 L0 0 L25 10" stroke="#A3A3A3" stroke-width="6" stroke-linecap="round" fill="none"/>
+                                <!-- Legs -->
+                                <path d="M0 30 L-15 60" stroke="#A3A3A3" stroke-width="6" stroke-linecap="round"/>
+                                <path d="M0 30 L15 60" stroke="#A3A3A3" stroke-width="6" stroke-linecap="round"/>
+                                <!-- Phone in hand -->
+                                <rect x="22" y="5" width="8" height="14" fill="#525252" rx="1"/>
+                                <circle cx="26" cy="12" r="4" fill="url(#glowRed)"/>
+                            </g>
+
+                            <!-- Car (bottom left) -->
+                            <g transform="translate(60, 180)">
+                                <circle cx="0" cy="-10" r="25" fill="url(#glowRed)"/>
+                                <path d="M-25 0 L-20 -15 L-10 -20 L10 -20 L20 -15 L25 0 L25 8 L-25 8 Z" fill="#525252" stroke="#404040" stroke-width="1"/>
+                                <circle cx="-15" cy="8" r="6" fill="#404040"/>
+                                <circle cx="15" cy="8" r="6" fill="#404040"/>
+                                <!-- Signal from car -->
+                                <path d="M0 -25 Q-5 -32 0 -38" stroke="#EF4444" stroke-width="1.5" fill="none" opacity="0.6"/>
+                                <path d="M0 -25 Q5 -32 0 -38" stroke="#EF4444" stroke-width="1.5" fill="none" opacity="0.6"/>
+                            </g>
+
+                            <!-- Laptop (bottom right) -->
+                            <g transform="translate(240, 175)">
+                                <circle cx="0" cy="0" r="22" fill="url(#glowRed)"/>
+                                <rect x="-18" y="-12" width="36" height="24" fill="#525252" rx="2"/>
+                                <rect x="-15" y="-9" width="30" height="18" fill="#404040" rx="1"/>
+                                <rect x="-22" y="12" width="44" height="4" fill="#525252" rx="1"/>
+                                <!-- Signal -->
+                                <path d="M15 -8 Q22 -15 15 -22" stroke="#EF4444" stroke-width="1.5" fill="none" opacity="0.6"/>
+                            </g>
+
+                            <!-- Connecting signal lines to person -->
+                            <path d="M50 70 Q100 100 135 115" stroke="#EF4444" stroke-width="1" stroke-dasharray="4 3" opacity="0.4"/>
+                            <path d="M150 50 L150 100" stroke="#EF4444" stroke-width="1" stroke-dasharray="4 3" opacity="0.4"/>
+                            <path d="M240 90 Q200 100 165 115" stroke="#EF4444" stroke-width="1" stroke-dasharray="4 3" opacity="0.4"/>
+                            <path d="M70 170 Q110 160 135 150" stroke="#EF4444" stroke-width="1" stroke-dasharray="4 3" opacity="0.4"/>
+                            <path d="M220 170 Q190 160 165 150" stroke="#EF4444" stroke-width="1" stroke-dasharray="4 3" opacity="0.4"/>
+                        </svg>
+
+                        <!-- Text Overlay -->
+                        <p class="text-white text-sm leading-snug mt-4 font-medium text-center">
+                            Billions of Connected Devices, Towers and Satellites Everywhere Means <span class="text-brand-teal">24/7 EMF Exposure</span> Is Now a Fact of Life
+                        </p>
+                    </div>
+                </div>
+
                 <p>You've tried the stickers. The blockers. The protection devices. Maybe you've spent hundreds on products that promised EMF protection.</p>
 
                 <p>And nothing changed.</p>
